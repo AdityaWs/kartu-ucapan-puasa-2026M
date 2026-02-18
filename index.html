@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Puasa 2026M / 1447H</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <img src="./images/Hanging Ornament.webp" style="
+        position: fixed;
+        top: 0;
+        left: 32px;
+        width: 150px;">
+
+    <img src="./images/Hanging Ornament.webp" style="
+        position: fixed;
+        top: 0;
+        right: 32px;
+        width: 150px;
+        transform: scale(-1, 1);">
+
+    <img src="./images/Ornament Corner.webp" style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 25vw;
+        min-width: 128px;
+        max-width: 400px;">
+
+    <img src="./images/Ornament Corner.webp" style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 25vw;
+        min-width: 128px;
+        max-width: 400px;
+        transform: scale(-1, 1);">
+
+    <div class="card-content hidden" id="content">
+        <div style="padding: 2rem .5rem;">
+            <h1 style="font-size: 1.5rem; margin-top: 2rem;">Selamat Menyambut <br> Bulan Suci Ramadhan</span></h1>
+            <p style="margin: .5rem 0;"><b>TAHUN 1447H / 2026M</b></p>
+            <p>Selamat menjalankan ibadah puasa ya teman-teman! semoga puasa tahun ini bisa menjadi lebih baik dari sebelumnya dan semangat ibadahnya ya 💪😁</p>
+            <p style="font-size: .875rem; margin-top: .5rem;">
+                by: <a href="https://instagram.com/adityaws">@aditya_wahyu_dev</a> <br>
+                <a href="https://github.com/AdityaWs">github profile</a>
+            </p>
+        </div>
+        <img src="./images/Mosque.webp" alt="">
+    </div>
+
+    <div class="card-front" id="mail" onclick="
+        document.getElementById('content').classList.remove('hidden');
+        document.getElementById('mail').style.transition = '3.5s';
+        document.getElementById('mail').classList.add('hidden');
+        document.getElementById('paper-sound').play();
+        setTimeout(function(){
+            document.getElementById('ramadhan-sound').play();
+        }, 2500);
+    ">
+        <img src="./images/Belah Ketupat.webp" alt="Gambar Belah Ketupat">
+        <p>klik untuk membuka</p>
+    </div>
+
+    <audio src="./sound/paper-crumpling.mp3" id="paper-sound"></audio>
+    <audio src="./sound/ramadan-theme.mp3" id="ramadhan-sound"></audio>
+
+</body>
+</html>
